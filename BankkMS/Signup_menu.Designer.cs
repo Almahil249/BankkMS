@@ -58,6 +58,7 @@
             this.Customer.TabIndex = 13;
             this.Customer.Text = "Customer";
             this.Customer.UseVisualStyleBackColor = false;
+            this.Customer.Click += new System.EventHandler(this.Customer_Click);
             // 
             // Admin
             // 
@@ -70,6 +71,7 @@
             this.Admin.TabIndex = 13;
             this.Admin.Text = "Admin";
             this.Admin.UseVisualStyleBackColor = false;
+            this.Admin.Click += new System.EventHandler(this.Admin_Click);
             // 
             // Employee
             // 
@@ -82,6 +84,7 @@
             this.Employee.TabIndex = 13;
             this.Employee.Text = "Employee";
             this.Employee.UseVisualStyleBackColor = false;
+            this.Employee.Click += new System.EventHandler(this.Employee_Click);
             // 
             // Signup_menu
             // 

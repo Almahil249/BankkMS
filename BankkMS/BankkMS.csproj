@@ -58,11 +58,11 @@
     <Compile Include="Employee_Signup.Designer.cs">
       <DependentUpon>Employee_Signup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer_Login.cs">
+    <Compile Include="Customer_Signup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer_Login.Designer.cs">
-      <DependentUpon>Customer_Login.cs</DependentUpon>
+    <Compile Include="Customer_Signup.Designer.cs">
+      <DependentUpon>Customer_Signup.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup_menu.cs">
       <SubType>Form</SubType>
@@ -84,8 +84,8 @@
     <EmbeddedResource Include="Employee_Signup.resx">
       <DependentUpon>Employee_Signup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer_Login.resx">
-      <DependentUpon>Customer_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Customer_Signup.resx">
+      <DependentUpon>Customer_Signup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup_menu.resx">
       <DependentUpon>Signup_menu.cs</DependentUpon>

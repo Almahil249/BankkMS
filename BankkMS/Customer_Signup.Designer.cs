@@ -1,6 +1,6 @@
 ﻿namespace BankkMS
 {
-    partial class Customer_Login
+    partial class Customer_Signup
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer_Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer_Signup));
             this.Signin_lnk = new System.Windows.Forms.LinkLabel();
             this.Sign_up = new System.Windows.Forms.Button();
             this.Password_Read = new System.Windows.Forms.TextBox();
@@ -36,9 +36,7 @@
             this.Read_Age = new System.Windows.Forms.TextBox();
             this.Password_MSG = new System.Windows.Forms.Label();
             this.Phone_Read = new System.Windows.Forms.TextBox();
-            this.UserName_Read = new System.Windows.Forms.Label();
-            this.Age_Read = new System.Windows.Forms.Label();
-            this.Phone_MSG = new System.Windows.Forms.Label();
+            this.Age_MSG = new System.Windows.Forms.Label();
             this.City_Read = new System.Windows.Forms.TextBox();
             this.SSN_Read = new System.Windows.Forms.TextBox();
             this.City_MSG = new System.Windows.Forms.Label();
@@ -49,6 +47,8 @@
             this.Name_MSG = new System.Windows.Forms.Label();
             this.SignupMSG = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Phone_MSG = new System.Windows.Forms.Label();
+            this.UserName_MSG = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +84,6 @@
             this.Password_Read.Name = "Password_Read";
             this.Password_Read.Size = new System.Drawing.Size(249, 38);
             this.Password_Read.TabIndex = 2;
-            this.Password_Read.TextChanged += new System.EventHandler(this.Password_Read_TextChanged);
             // 
             // User_name_Read
             // 
@@ -102,7 +101,6 @@
             this.Read_Age.Name = "Read_Age";
             this.Read_Age.Size = new System.Drawing.Size(249, 38);
             this.Read_Age.TabIndex = 2;
-            this.Read_Age.TextChanged += new System.EventHandler(this.Read_Age_TextChanged);
             // 
             // Password_MSG
             // 
@@ -121,37 +119,16 @@
             this.Phone_Read.Name = "Phone_Read";
             this.Phone_Read.Size = new System.Drawing.Size(301, 38);
             this.Phone_Read.TabIndex = 2;
-            this.Phone_Read.TextChanged += new System.EventHandler(this.Phone_Read_TextChanged);
             // 
-            // UserName_Read
+            // Age_MSG
             // 
-            this.UserName_Read.AutoSize = true;
-            this.UserName_Read.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserName_Read.Location = new System.Drawing.Point(18, 383);
-            this.UserName_Read.Name = "UserName_Read";
-            this.UserName_Read.Size = new System.Drawing.Size(90, 18);
-            this.UserName_Read.TabIndex = 1;
-            this.UserName_Read.Text = "User Name";
-            // 
-            // Age_Read
-            // 
-            this.Age_Read.AutoSize = true;
-            this.Age_Read.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Age_Read.Location = new System.Drawing.Point(397, 299);
-            this.Age_Read.Name = "Age_Read";
-            this.Age_Read.Size = new System.Drawing.Size(35, 18);
-            this.Age_Read.TabIndex = 1;
-            this.Age_Read.Text = "Age";
-            // 
-            // Phone_MSG
-            // 
-            this.Phone_MSG.AutoSize = true;
-            this.Phone_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Phone_MSG.Location = new System.Drawing.Point(18, 299);
-            this.Phone_MSG.Name = "Phone_MSG";
-            this.Phone_MSG.Size = new System.Drawing.Size(120, 18);
-            this.Phone_MSG.TabIndex = 1;
-            this.Phone_MSG.Text = "Phone Number";
+            this.Age_MSG.AutoSize = true;
+            this.Age_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age_MSG.Location = new System.Drawing.Point(397, 299);
+            this.Age_MSG.Name = "Age_MSG";
+            this.Age_MSG.Size = new System.Drawing.Size(35, 18);
+            this.Age_MSG.TabIndex = 1;
+            this.Age_MSG.Text = "Age";
             // 
             // City_Read
             // 
@@ -160,7 +137,6 @@
             this.City_Read.Name = "City_Read";
             this.City_Read.Size = new System.Drawing.Size(249, 38);
             this.City_Read.TabIndex = 2;
-            this.City_Read.TextChanged += new System.EventHandler(this.City_Read_TextChanged);
             // 
             // SSN_Read
             // 
@@ -169,7 +145,6 @@
             this.SSN_Read.Name = "SSN_Read";
             this.SSN_Read.Size = new System.Drawing.Size(301, 38);
             this.SSN_Read.TabIndex = 2;
-            this.SSN_Read.TextChanged += new System.EventHandler(this.SSN_Read_TextChanged);
             // 
             // City_MSG
             // 
@@ -198,7 +173,6 @@
             this.Street_Read.Name = "Street_Read";
             this.Street_Read.Size = new System.Drawing.Size(249, 38);
             this.Street_Read.TabIndex = 2;
-            this.Street_Read.TextChanged += new System.EventHandler(this.Street_Read_TextChanged);
             // 
             // Street_MSG
             // 
@@ -217,7 +191,6 @@
             this.Name_Read.Name = "Name_Read";
             this.Name_Read.Size = new System.Drawing.Size(301, 38);
             this.Name_Read.TabIndex = 2;
-            this.Name_Read.TextChanged += new System.EventHandler(this.Name_Read_TextChanged);
             // 
             // Name_MSG
             // 
@@ -247,11 +220,11 @@
             this.panel1.Controls.Add(this.Password_Read);
             this.panel1.Controls.Add(this.User_name_Read);
             this.panel1.Controls.Add(this.Read_Age);
+            this.panel1.Controls.Add(this.UserName_MSG);
             this.panel1.Controls.Add(this.Password_MSG);
             this.panel1.Controls.Add(this.Phone_Read);
-            this.panel1.Controls.Add(this.UserName_Read);
-            this.panel1.Controls.Add(this.Age_Read);
             this.panel1.Controls.Add(this.Phone_MSG);
+            this.panel1.Controls.Add(this.Age_MSG);
             this.panel1.Controls.Add(this.City_Read);
             this.panel1.Controls.Add(this.SSN_Read);
             this.panel1.Controls.Add(this.City_MSG);
@@ -266,7 +239,27 @@
             this.panel1.Size = new System.Drawing.Size(693, 604);
             this.panel1.TabIndex = 2;
             // 
-            // Customer_Login
+            // Phone_MSG
+            // 
+            this.Phone_MSG.AutoSize = true;
+            this.Phone_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Phone_MSG.Location = new System.Drawing.Point(18, 299);
+            this.Phone_MSG.Name = "Phone_MSG";
+            this.Phone_MSG.Size = new System.Drawing.Size(120, 18);
+            this.Phone_MSG.TabIndex = 1;
+            this.Phone_MSG.Text = "Phone Number";
+            // 
+            // UserName_MSG
+            // 
+            this.UserName_MSG.AutoSize = true;
+            this.UserName_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserName_MSG.Location = new System.Drawing.Point(18, 383);
+            this.UserName_MSG.Name = "UserName_MSG";
+            this.UserName_MSG.Size = new System.Drawing.Size(90, 18);
+            this.UserName_MSG.TabIndex = 1;
+            this.UserName_MSG.Text = "User Name";
+            // 
+            // Customer_Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -275,7 +268,7 @@
             this.ClientSize = new System.Drawing.Size(963, 792);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Customer_Login";
+            this.Name = "Customer_Signup";
             this.Text = "Customer Sign up";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -292,9 +285,7 @@
         private System.Windows.Forms.TextBox Read_Age;
         private System.Windows.Forms.Label Password_MSG;
         private System.Windows.Forms.TextBox Phone_Read;
-        private System.Windows.Forms.Label UserName_Read;
-        private System.Windows.Forms.Label Age_Read;
-        private System.Windows.Forms.Label Phone_MSG;
+        private System.Windows.Forms.Label Age_MSG;
         private System.Windows.Forms.TextBox City_Read;
         private System.Windows.Forms.TextBox SSN_Read;
         private System.Windows.Forms.Label City_MSG;
@@ -305,5 +296,7 @@
         private System.Windows.Forms.Label Name_MSG;
         private System.Windows.Forms.Label SignupMSG;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Phone_MSG;
+        private System.Windows.Forms.Label UserName_MSG;
     }
 }

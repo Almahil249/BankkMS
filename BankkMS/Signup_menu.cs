@@ -17,22 +17,23 @@ namespace BankkMS
             InitializeComponent();
         }
 
-        private void Employee_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Admin_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Customer_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Account_type_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Customer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Employee_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Admin_Click(object sender, EventArgs e)
         {
 
         }

@@ -55,7 +55,6 @@
             this.LogIn.TabIndex = 0;
             this.LogIn.Text = "Log in";
             this.LogIn.UseVisualStyleBackColor = false;
-            this.LogIn.Click += new System.EventHandler(this.button1_Click);
             // 
             // newAccount_LNK
             // 
@@ -67,7 +66,6 @@
             this.newAccount_LNK.TabIndex = 1;
             this.newAccount_LNK.TabStop = true;
             this.newAccount_LNK.Text = "Create an Account";
-            this.newAccount_LNK.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.newAccount_LinkClicked);
             // 
             // welcomeMSG
             // 
@@ -101,7 +99,6 @@
             this.User_name.Size = new System.Drawing.Size(108, 34);
             this.User_name.TabIndex = 3;
             this.User_name.Text = "User Name";
-            this.User_name.Click += new System.EventHandler(this.label3_Click);
             // 
             // Account_type
             // 
@@ -113,7 +110,6 @@
             this.Account_type.Size = new System.Drawing.Size(175, 31);
             this.Account_type.TabIndex = 3;
             this.Account_type.Text = "Account type:";
-            this.Account_type.Click += new System.EventHandler(this.Account_type_Click);
             // 
             // Customer
             // 
@@ -162,7 +158,6 @@
             this.Password_Read.Size = new System.Drawing.Size(296, 27);
             this.Password_Read.TabIndex = 5;
             this.Password_Read.Text = "Please Enter your Password";
-            this.Password_Read.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Username_Read
             // 
@@ -173,7 +168,6 @@
             this.Username_Read.Size = new System.Drawing.Size(296, 27);
             this.Username_Read.TabIndex = 5;
             this.Username_Read.Text = "Please Enter your Username";
-            this.Username_Read.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupBox1
             // 
