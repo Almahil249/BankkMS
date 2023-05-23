@@ -62,13 +62,13 @@ namespace BankkMS
             }
         }
 
-        public static bool CheckExists(string query)
+        public static int CheckExists(string query)
         {
             
             SqlCommand cmd = new SqlCommand(query, conn);
 
             int count = Convert.ToInt32(cmd.ExecuteScalar());
-            return count > 0;
+            return count;
         }
     }
 }

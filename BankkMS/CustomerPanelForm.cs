@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BankkMS
 {
-    public partial class AdminPanelForm : Form
+    public partial class CustomerPanelForm : Form
     {
-        public AdminPanelForm()
+        public CustomerPanelForm()
         {
             InitializeComponent();
-        }
-
-        private void AdminPanelForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void LoadChildFormIntoPanel(Form childForm)
@@ -36,19 +31,20 @@ namespace BankkMS
             childForm.Show();
         }
 
-        private void buttonShowData_Click(object sender, EventArgs e)
-        {
-            LoadChildFormIntoPanel(new ShowDataForm());
-        }
 
-        private void buttonAddBank_Click(object sender, EventArgs e)
+        private void buttonTransactions_Click(object sender, EventArgs e)
         {
             LoadChildFormIntoPanel(new AddBankForm());
         }
 
-        private void buttonManageBank_Click(object sender, EventArgs e)
+        private void buttonLoanRequest_Click(object sender, EventArgs e)
         {
-            LoadChildFormIntoPanel(new ManageBankForm());
+            LoadChildFormIntoPanel(new RequestLoanForm());
+        }
+
+        private void openAccount_Click(object sender, EventArgs e)
+        {
+            LoadChildFormIntoPanel(new OpenAccountForm());
         }
     }
 }

@@ -21,7 +21,7 @@ namespace BankkMS
         {
             DBHelper.OpenConn();
             string queryCheck = "SELECT COUNT(*) FROM [dbo].[Banks] WHERE Bnk_ID = '"+bankId.Text+"'";
-            if (DBHelper.CheckExists(queryCheck))
+            if (DBHelper.CheckExists(queryCheck) > 0)
             {
                 string query = "INSERT INTO [dbo].[Branchs]([Br_Street],[Br_City],[Br_Name],[Bnk_ID]) VALUES('" + branchStreet.Text + "', '" + branchCity.Text + "', '" + branchName.Text + "', '" + bankId.Text + "')";
                 DBHelper.insertData(query);
