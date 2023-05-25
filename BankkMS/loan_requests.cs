@@ -31,7 +31,7 @@ namespace BankkMS
 
         private void loan_requests_Load(object sender, EventArgs e)
         {
-            string query1 = "SELECT lr.Loan_Number,lr.Acc_Number,lr.Loan_ID,lr.Loan_State FROM Loans_Requests lr JOIN Loans l ON lr.Loan_ID = l.Loan_ID WHERE l.Br_ID = '"+BrID+"'";
+            string query1 = "SELECT lr.Loan_Number,lr.Acc_Number,lr.Loan_ID,lr.Loan_State FROM Loans_Requests lr JOIN Loans l ON lr.Loan_ID = l.Loan_ID WHERE l.Br_ID = '"+BrID+ "' AND lr.Loan_State ='PENDING' ";
             DBHelper.OpenConn();
             DataTable dtTable1 = DBHelper.readData(query1);
             DBHelper.CloseConn();
@@ -51,6 +51,11 @@ namespace BankkMS
                 MessageBox.Show(EXP.Message);
 
             }*/
+        }
+
+        private void Reject_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

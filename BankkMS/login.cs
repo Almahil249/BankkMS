@@ -54,7 +54,7 @@ namespace BankkMS
                             SSN_fromLogin = (string)Command1.ExecuteScalar();
                             connection.Close();
 
-                            if (is_Valid != 1)
+                            if (is_Valid != 1) 
                             {
                                 MessageBox.Show("Error username Or password", "Error!");
                             }
