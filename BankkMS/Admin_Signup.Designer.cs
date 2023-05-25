@@ -62,7 +62,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(693, 546);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Signin_lnk
             // 
@@ -74,6 +73,7 @@
             this.Signin_lnk.TabIndex = 10;
             this.Signin_lnk.TabStop = true;
             this.Signin_lnk.Text = "Sign In?";
+            this.Signin_lnk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Signin_lnk_LinkClicked);
             // 
             // Sign_up
             // 
@@ -86,6 +86,7 @@
             this.Sign_up.TabIndex = 9;
             this.Sign_up.Text = "Sign Up";
             this.Sign_up.UseVisualStyleBackColor = false;
+            this.Sign_up.Click += new System.EventHandler(this.Sign_up_Click);
             // 
             // Password_Read
             // 

@@ -32,8 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Signin_lnk = new System.Windows.Forms.LinkLabel();
             this.Sign_up = new System.Windows.Forms.Button();
+            this.BranchID_Read = new System.Windows.Forms.TextBox();
             this.Password_Read = new System.Windows.Forms.TextBox();
+            this.BankID_Read = new System.Windows.Forms.TextBox();
             this.User_read = new System.Windows.Forms.TextBox();
+            this.BranchID_MSG = new System.Windows.Forms.Label();
+            this.BranchID = new System.Windows.Forms.Label();
             this.Password_MSG = new System.Windows.Forms.Label();
             this.UserName_Read = new System.Windows.Forms.Label();
             this.SSN_Read = new System.Windows.Forms.TextBox();
@@ -41,10 +45,6 @@
             this.Name_Read = new System.Windows.Forms.TextBox();
             this.Name_MSG = new System.Windows.Forms.Label();
             this.SignupMSG = new System.Windows.Forms.Label();
-            this.BranchID = new System.Windows.Forms.Label();
-            this.BranchID_MSG = new System.Windows.Forms.Label();
-            this.BankID_Read = new System.Windows.Forms.TextBox();
-            this.BranchID_Read = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,7 @@
             this.Signin_lnk.TabIndex = 10;
             this.Signin_lnk.TabStop = true;
             this.Signin_lnk.Text = "Sign In?";
+            this.Signin_lnk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Signin_lnk_LinkClicked);
             // 
             // Sign_up
             // 
@@ -93,6 +94,15 @@
             this.Sign_up.TabIndex = 9;
             this.Sign_up.Text = "Sign Up";
             this.Sign_up.UseVisualStyleBackColor = false;
+            this.Sign_up.Click += new System.EventHandler(this.Sign_up_Click);
+            // 
+            // BranchID_Read
+            // 
+            this.BranchID_Read.Location = new System.Drawing.Point(362, 255);
+            this.BranchID_Read.Multiline = true;
+            this.BranchID_Read.Name = "BranchID_Read";
+            this.BranchID_Read.Size = new System.Drawing.Size(301, 38);
+            this.BranchID_Read.TabIndex = 2;
             // 
             // Password_Read
             // 
@@ -101,7 +111,14 @@
             this.Password_Read.Name = "Password_Read";
             this.Password_Read.Size = new System.Drawing.Size(301, 38);
             this.Password_Read.TabIndex = 2;
-            this.Password_Read.TextChanged += new System.EventHandler(this.Password_Read_TextChanged);
+            // 
+            // BankID_Read
+            // 
+            this.BankID_Read.Location = new System.Drawing.Point(21, 255);
+            this.BankID_Read.Multiline = true;
+            this.BankID_Read.Name = "BankID_Read";
+            this.BankID_Read.Size = new System.Drawing.Size(301, 38);
+            this.BankID_Read.TabIndex = 2;
             // 
             // User_read
             // 
@@ -110,7 +127,26 @@
             this.User_read.Name = "User_read";
             this.User_read.Size = new System.Drawing.Size(301, 38);
             this.User_read.TabIndex = 2;
-            this.User_read.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // BranchID_MSG
+            // 
+            this.BranchID_MSG.AutoSize = true;
+            this.BranchID_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BranchID_MSG.Location = new System.Drawing.Point(359, 223);
+            this.BranchID_MSG.Name = "BranchID_MSG";
+            this.BranchID_MSG.Size = new System.Drawing.Size(87, 18);
+            this.BranchID_MSG.TabIndex = 1;
+            this.BranchID_MSG.Text = "Branch ID";
+            // 
+            // BranchID
+            // 
+            this.BranchID.AutoSize = true;
+            this.BranchID.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BranchID.Location = new System.Drawing.Point(18, 223);
+            this.BranchID.Name = "BranchID";
+            this.BranchID.Size = new System.Drawing.Size(70, 18);
+            this.BranchID.TabIndex = 1;
+            this.BranchID.Text = "Bank ID";
             // 
             // Password_MSG
             // 
@@ -157,7 +193,6 @@
             this.Name_Read.Name = "Name_Read";
             this.Name_Read.Size = new System.Drawing.Size(301, 38);
             this.Name_Read.TabIndex = 2;
-            this.Name_Read.TextChanged += new System.EventHandler(this.Name_Read_TextChanged);
             // 
             // Name_MSG
             // 
@@ -178,44 +213,6 @@
             this.SignupMSG.Size = new System.Drawing.Size(281, 32);
             this.SignupMSG.TabIndex = 0;
             this.SignupMSG.Text = "Employee Sign Up";
-            // 
-            // BranchID
-            // 
-            this.BranchID.AutoSize = true;
-            this.BranchID.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BranchID.Location = new System.Drawing.Point(18, 223);
-            this.BranchID.Name = "BranchID";
-            this.BranchID.Size = new System.Drawing.Size(70, 18);
-            this.BranchID.TabIndex = 1;
-            this.BranchID.Text = "Bank ID";
-            this.BranchID.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // BranchID_MSG
-            // 
-            this.BranchID_MSG.AutoSize = true;
-            this.BranchID_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BranchID_MSG.Location = new System.Drawing.Point(359, 223);
-            this.BranchID_MSG.Name = "BranchID_MSG";
-            this.BranchID_MSG.Size = new System.Drawing.Size(87, 18);
-            this.BranchID_MSG.TabIndex = 1;
-            this.BranchID_MSG.Text = "Branch ID";
-            // 
-            // BankID_Read
-            // 
-            this.BankID_Read.Location = new System.Drawing.Point(21, 255);
-            this.BankID_Read.Multiline = true;
-            this.BankID_Read.Name = "BankID_Read";
-            this.BankID_Read.Size = new System.Drawing.Size(301, 38);
-            this.BankID_Read.TabIndex = 2;
-            this.BankID_Read.TextChanged += new System.EventHandler(this.Bank_ID_TextChanged);
-            // 
-            // BranchID_Read
-            // 
-            this.BranchID_Read.Location = new System.Drawing.Point(362, 255);
-            this.BranchID_Read.Multiline = true;
-            this.BranchID_Read.Name = "BranchID_Read";
-            this.BranchID_Read.Size = new System.Drawing.Size(301, 38);
-            this.BranchID_Read.TabIndex = 2;
             // 
             // Employee_Signup
             // 

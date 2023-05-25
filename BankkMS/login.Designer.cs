@@ -55,6 +55,7 @@
             this.LogIn.TabIndex = 0;
             this.LogIn.Text = "Log in";
             this.LogIn.UseVisualStyleBackColor = false;
+            this.LogIn.Click += new System.EventHandler(this.LogIn_Click);
             // 
             // newAccount_LNK
             // 
@@ -66,6 +67,7 @@
             this.newAccount_LNK.TabIndex = 1;
             this.newAccount_LNK.TabStop = true;
             this.newAccount_LNK.Text = "Create an Account";
+            this.newAccount_LNK.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.newAccount_LNK_LinkClicked);
             // 
             // welcomeMSG
             // 
@@ -123,6 +125,7 @@
             this.Customer.TabStop = true;
             this.Customer.Text = "Customer";
             this.Customer.UseVisualStyleBackColor = false;
+            this.Customer.CheckedChanged += new System.EventHandler(this.Customer_CheckedChanged);
             // 
             // Employee
             // 
@@ -136,6 +139,7 @@
             this.Employee.TabStop = true;
             this.Employee.Text = "Employee";
             this.Employee.UseVisualStyleBackColor = false;
+            this.Employee.CheckedChanged += new System.EventHandler(this.Employee_CheckedChanged);
             // 
             // Admin
             // 
@@ -149,6 +153,7 @@
             this.Admin.TabStop = true;
             this.Admin.Text = "Admin";
             this.Admin.UseVisualStyleBackColor = false;
+            this.Admin.CheckedChanged += new System.EventHandler(this.Admin_CheckedChanged);
             // 
             // Password_Read
             // 
@@ -157,7 +162,6 @@
             this.Password_Read.Name = "Password_Read";
             this.Password_Read.Size = new System.Drawing.Size(296, 27);
             this.Password_Read.TabIndex = 5;
-            this.Password_Read.Text = "Please Enter your Password";
             // 
             // Username_Read
             // 
@@ -167,7 +171,6 @@
             this.Username_Read.Name = "Username_Read";
             this.Username_Read.Size = new System.Drawing.Size(296, 27);
             this.Username_Read.TabIndex = 5;
-            this.Username_Read.Text = "Please Enter your Username";
             // 
             // groupBox1
             // 
@@ -201,7 +204,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login_Page";
             this.Text = "Log in";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

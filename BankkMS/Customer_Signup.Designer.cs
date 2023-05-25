@@ -47,8 +47,8 @@
             this.Name_MSG = new System.Windows.Forms.Label();
             this.SignupMSG = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Phone_MSG = new System.Windows.Forms.Label();
             this.UserName_MSG = new System.Windows.Forms.Label();
+            this.Phone_MSG = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +92,6 @@
             this.User_name_Read.Name = "User_name_Read";
             this.User_name_Read.Size = new System.Drawing.Size(301, 38);
             this.User_name_Read.TabIndex = 2;
-            this.User_name_Read.TextChanged += new System.EventHandler(this.User_name_Read_TextChanged);
             // 
             // Read_Age
             // 
@@ -239,16 +238,6 @@
             this.panel1.Size = new System.Drawing.Size(693, 604);
             this.panel1.TabIndex = 2;
             // 
-            // Phone_MSG
-            // 
-            this.Phone_MSG.AutoSize = true;
-            this.Phone_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Phone_MSG.Location = new System.Drawing.Point(18, 299);
-            this.Phone_MSG.Name = "Phone_MSG";
-            this.Phone_MSG.Size = new System.Drawing.Size(120, 18);
-            this.Phone_MSG.TabIndex = 1;
-            this.Phone_MSG.Text = "Phone Number";
-            // 
             // UserName_MSG
             // 
             this.UserName_MSG.AutoSize = true;
@@ -258,6 +247,16 @@
             this.UserName_MSG.Size = new System.Drawing.Size(90, 18);
             this.UserName_MSG.TabIndex = 1;
             this.UserName_MSG.Text = "User Name";
+            // 
+            // Phone_MSG
+            // 
+            this.Phone_MSG.AutoSize = true;
+            this.Phone_MSG.Font = new System.Drawing.Font("Georgia Pro Cond Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Phone_MSG.Location = new System.Drawing.Point(18, 299);
+            this.Phone_MSG.Name = "Phone_MSG";
+            this.Phone_MSG.Size = new System.Drawing.Size(120, 18);
+            this.Phone_MSG.TabIndex = 1;
+            this.Phone_MSG.Text = "Phone Number";
             // 
             // Customer_Signup
             // 

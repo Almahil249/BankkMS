@@ -69,5 +69,15 @@ namespace BankkMS.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_uri20211230_15_18s1lgf1 {
+            get {
+                object obj = ResourceManager.GetObject("open-uri20211230-15-18s1lgf1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

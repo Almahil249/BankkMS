@@ -40,21 +40,20 @@
             this.Account_type.AutoSize = true;
             this.Account_type.BackColor = System.Drawing.Color.Transparent;
             this.Account_type.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Account_type.Location = new System.Drawing.Point(115, 202);
+            this.Account_type.Location = new System.Drawing.Point(68, 89);
             this.Account_type.Name = "Account_type";
             this.Account_type.Size = new System.Drawing.Size(187, 48);
             this.Account_type.TabIndex = 9;
             this.Account_type.Text = "Account type:";
-            this.Account_type.Click += new System.EventHandler(this.Account_type_Click);
             // 
             // Customer
             // 
             this.Customer.AccessibleDescription = "";
             this.Customer.BackColor = System.Drawing.Color.Transparent;
             this.Customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Customer.Location = new System.Drawing.Point(96, 351);
+            this.Customer.Location = new System.Drawing.Point(49, 238);
             this.Customer.Name = "Customer";
-            this.Customer.Size = new System.Drawing.Size(175, 54);
+            this.Customer.Size = new System.Drawing.Size(206, 54);
             this.Customer.TabIndex = 13;
             this.Customer.Text = "Customer";
             this.Customer.UseVisualStyleBackColor = false;
@@ -65,7 +64,7 @@
             this.Admin.AccessibleDescription = "";
             this.Admin.BackColor = System.Drawing.Color.Transparent;
             this.Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Admin.Location = new System.Drawing.Point(619, 351);
+            this.Admin.Location = new System.Drawing.Point(572, 238);
             this.Admin.Name = "Admin";
             this.Admin.Size = new System.Drawing.Size(175, 54);
             this.Admin.TabIndex = 13;
@@ -78,9 +77,9 @@
             this.Employee.AccessibleDescription = "";
             this.Employee.BackColor = System.Drawing.Color.Transparent;
             this.Employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employee.Location = new System.Drawing.Point(344, 351);
+            this.Employee.Location = new System.Drawing.Point(297, 238);
             this.Employee.Name = "Employee";
-            this.Employee.Size = new System.Drawing.Size(175, 54);
+            this.Employee.Size = new System.Drawing.Size(206, 54);
             this.Employee.TabIndex = 13;
             this.Employee.Text = "Employee";
             this.Employee.UseVisualStyleBackColor = false;
@@ -92,7 +91,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(904, 679);
+            this.ClientSize = new System.Drawing.Size(813, 460);
             this.Controls.Add(this.Employee);
             this.Controls.Add(this.Admin);
             this.Controls.Add(this.Customer);
